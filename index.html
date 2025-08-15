@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LinkedOn - Learning Center</title>
+  <meta name="description" content="LinkedOn - kursus praktis, project-based learning, dan mentorship dari praktisi industri." />
+  <meta property="og:title" content="LinkedOn - Learning Center" />
+  <meta property="og:description" content="Belajar praktis, bangun portofolio nyata, dibimbing mentor industri." />
+  <link rel="icon" href="/favicon.ico" />
+  <!-- Improved typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <!-- Top Bar (mockup browser chrome) -->
+  <div class="topbar">
+    <div class="brand">
+      <!-- LOGO: flat minimalis (SVG, tidak ada tulisan) -->
+      <a href="#home" class="logo" aria-label="Go to Home" title="Home" style="background:#0179b9;">
+        <img src="LinkedOn-logo.jpg" alt="LinkedOn Logo" />
+      </a>
+      <span class="fake-address-bar">LinkedOn.com</span>
+    </div>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#profile">Our Profile</a>
+      <a href="#network">Network</a>
+      <a href="#contact">Message Us</a>
+    </nav>
+  </div>
+
+  <!-- Hero / Welcome -->
+  <header id="home" class="hero section">
+    <div class="container">
+      <h1 id="welcomeTitle" style="font-family:'Poppins',Arial,sans-serif; font-weight:700; font-size:3.4rem; margin-bottom:22px; text-align:center;">
+        Hi, Welcome to 
+        <span class="linkedon-logo-text">
+          Linked
+          <span class="linkedon-logo-on">on</span>
+        </span>
+      </h1>
+      <p class="lead">Tempat membangun karier dan koneksi profesional secara nyata dan terstruktur.</p>
+      
+      <!-- input nama cepat di hero -->
+      <div class="hero-input">
+        <label for="heroName" class="sr-only">Nama</label>
+        <input id="heroName" type="text" placeholder="Masukkan nama kamu..." aria-label="Masukkan nama" />
+        <button id="heroSet" class="btn" type="button">Set Name</button>
+        <button id="quickSignup" class="btn" type="button">Daftar Cepat</button>
+        <button id="askform" class="btn small" type="button">Fill name to ask</button>
+      </div>
+      
+      <div class="hero-blank">
+        <div class="poster-card hero-poster">
+          <div class="poster-media" aria-hidden="true">
+            <img src="LinkedOn-logo.jpg" alt="LinkedOn Logo" style="width:140px; height:140px; border-radius:24px; background:#0a66c2; box-shadow:0 2px 12px rgba(10,102,194,0.13);" />
+          </div>
+          <div class="poster-body">
+            <h3>Explore LinkedOn</h3>
+            <p class="poster-sub">Bangun profil profesional • Perluas relasi • Temukan peluang kerja</p>
+            <ul class="poster-features">
+              <li>Profil CV & portofolio online</li>
+              <li>Rekomendasi kerja sesuai skill</li>
+              <li>Networking dengan profesional dan perusahaan</li>
+              <li>Notifikasi lowongan terbaru</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+  <!-- Our Headquarter (interactive profile) -->
+  <section id="profile" class="section">
+    <div class="container profile-section">
+      <h2>Company Profile</h2>
+      <p class="lead">Hadir sebagai media profesional generasi baru, 
+                    LinkedOn membawa pengalaman networking karier ke level berikutnya. 
+                    Bangun personal branding, temukan peluang kerja, 
+                    dan terkoneksi dengan talenta dari berbagai bidang—semuanya dalam satu platform.</p>
+
+      <div class="profile-grid">
+        <div class="profile-main">
+          <div class="profile-cards">
+            <article class="profile-card" tabindex="0">
+              <div class="card-head">
+                <h3>Tentang LinkedOn</h3>
+                <button class="profile-toggle" aria-expanded="false">Detail</button>
+              </div>
+              <div class="card-details" hidden>
+                  <p>LinkedOn merupakan platform profesional yang dirancang untuk menghubungkan 
+                    individu dengan peluang karier dan komunitas profesional di seluruh dunia. 
+                    Melalui LinkedOn, pengguna dapat membuat profil profesional, menampilkan pengalaman kerja, 
+                    keahlian, serta proyek yang pernah dikerjakan.</p>
+                  <p>Kami menghadirkan ruang untuk saling terkoneksi, 
+                     berbagi pengetahuan, dan membangun reputasi profesional secara online. 
+                     Perusahaan juga dapat memposting lowongan pekerjaan dan mencari kandidat terbaik 
+                     berdasarkan skill yang relevan.</p>
+                </div>
+            </article>
+
+            <article class="profile-card" tabindex="0">
+              <div class="card-head">
+                <h3>Visi &amp; Misi</h3>
+                <button class="profile-toggle" aria-expanded="false">Detail</button>
+              </div>
+              <div class="card-details" hidden>
+                <p><strong>Visi:</strong> Menjadi platform profesional terdepan yang membantu setiap individu berkembang 
+                    secara karier dan terhubung dengan peluang kerja secara lebih mudah, cepat, dan efektif di era digital.<br/>
+                    <strong>Misi:</strong> LinkedOn bertujuan menghubungkan profesional, pelajar, dan perusahaan 
+                    dalam satu ekosistem karier; membantu membangun personal branding; memudahkan akses lowongan kerja 
+                    berbasis skill; serta mendukung perkembangan karier melalui fitur kolaborasi dan rekomendasi AI.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <aside class="profile-side" aria-labelledby="contactHeading">
+          <h3 id="contactHeading">Kontak &amp; Informasi</h3>
+          <p class="muted">Pertanyaan, kerjasama, atau saran? Hubungi kami langsung:</p>
+          <div class="contact-card">
+            <p><strong>Email</strong></p>
+            <div class="contact-line"><a href="mailto:wolsamsandy@gmail.com">wolsamsandy@gmail.com</a> <button class="copy-btn" data-copy="wolsamsandy@gmail.com" aria-label="Salin email">Salin</button></div>
+            <p><strong>Phone</strong></p>
+            <div class="contact-line"><a href="tel:085820542265">0858-2054-2265</a> <button class="copy-btn" data-copy="085820542265" aria-label="Salin nomor">Salin</button></div>
+            <p><strong>Alamat</strong></p>
+            <div class="contact-line">Jl. Dr. Ir. H. Soekarno No.178, Mulyorejo, Surabaya</div>
+          </div>
+          <div style="margin-top:12px"><a class="btn primary" href="#contact" aria-label="Kirim pesan">Kirim Pesan</a></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Bottom interactive name panel removed -->
+
+    <!-- Network (jaringan profesional) -->
+  <section id="network" class="section" aria-labelledby="networkHeading">
+    <div class="container">
+      <h2 id="networkHeading">Network</h2>
+      <p class="lead">Jaringan profesional dan perusahaan yang terhubung melalui LinkedOn</p>
+      
+      <div class="portfolio-controls">
+        <input id="networkSearch" class="input" type="search" placeholder="Cari orang atau perusahaan..." aria-label="Cari network" />
+        <div class="tags">
+          <button class="tag" data-filter="all">All</button>
+          <button class="tag" data-filter="person">People</button>
+          <button class="tag" data-filter="company">Company</button>
+        </div>
+      </div>
+
+      <div class="grid portfolio-box" id="networkGrid">
+        <!-- People -->
+        <article class="card" data-tags="person" tabindex="0">
+          <h3 class="card-title">Elon Musk</h3>
+          <p class="card-summary">CEO Tesla, SpaceX, Neuralink, dan inovator teknologi global.</p>
+          <p class="card-meta"><strong>LinkedOn:</strong> <a href="https://www.linkedin.com/company/elon-musk98/" target="_blank" rel="noopener">elon-musk98</a></p>
+          <div class="card-details" hidden>
+            <p>Elon Musk dikenal sebagai salah satu tokoh paling berpengaruh di bidang teknologi dan bisnis dunia. Aktif membangun jaringan profesional lintas industri, ia menginspirasi banyak inovator dan pengusaha muda.</p>
+          </div>
+        </article>
+        <article class="card" data-tags="person" tabindex="0">
+          <h3 class="card-title">Jeff Bezos</h3>
+          <p class="card-summary">Pendiri Amazon, investor, dan pemimpin bisnis visioner.</p>
+          <p class="card-meta"><strong>LinkedOn:</strong> <a href="https://www.linkedin.com/in/jeff-bezos-844328319/" target="_blank" rel="noopener">jeff-bezos</a></p>
+          <div class="card-details" hidden>
+            <p>Jeff Bezos membangun Amazon dari toko buku online menjadi raksasa e-commerce dan teknologi global. Jaringannya meliputi berbagai sektor, dari teknologi hingga eksplorasi luar angkasa.</p>
+          </div>
+        </article>
+        <article class="card" data-tags="person" tabindex="0">
+          <h3 class="card-title">Timothy Ronald</h3>
+          <p class="card-summary">Content Creator, LinkedIn Influencer, dan Career Coach.</p>
+          <p class="card-meta"><strong>LinkedOn:</strong> <a href="https://www.linkedin.com/in/timothyronald/" target="_blank" rel="noopener">timothyronald</a></p>
+          <div class="card-details" hidden>
+            <p>Timothy Ronald aktif membagikan tips karier, pengembangan diri, dan membangun komunitas profesional di LinkedIn Indonesia.</p>
+          </div>
+        </article>
+        <!-- Companies -->
+        <article class="card" data-tags="company" tabindex="0">
+          <h3 class="card-title">BNI (Business Network International)</h3>
+          <p class="card-summary">Organisasi jaringan bisnis terbesar di dunia.</p>
+          <p class="card-meta"><strong>LinkedOn:</strong> <a href="https://www.linkedin.com/company/bni-business-network-international-/" target="_blank" rel="noopener">BNI</a></p>
+          <div class="card-details" hidden>
+            <p>BNI membantu para profesional dan pengusaha memperluas jaringan, bertukar referensi, dan membangun relasi bisnis secara global.</p>
+          </div>
+        </article>
+        <article class="card" data-tags="company" tabindex="0">
+          <h3 class="card-title">Tesla</h3>
+          <p class="card-summary">Perusahaan otomotif dan energi terbarukan yang dipimpin oleh Elon Musk.</p>
+          <p class="card-meta"><strong>LinkedOn:</strong> <a href="https://www.linkedin.com/company/tesla-motors/" target="_blank" rel="noopener">Tesla</a></p>
+          <div class="card-details" hidden>
+            <p>Tesla dikenal sebagai pelopor kendaraan listrik dan teknologi energi bersih, serta menjadi salah satu perusahaan paling inovatif di dunia.</p>
+          </div>
+        </article>
+        <article class="card" data-tags="company" tabindex="0">
+          <h3 class="card-title">ASUS</h3>
+          <p class="card-summary">Perusahaan teknologi global yang memproduksi perangkat keras komputer dan elektronik.</p>
+          <p class="card-meta"><strong>LinkedOn:</strong> <a href="https://www.linkedin.com/company/asus/" target="_blank" rel="noopener">ASUS</a></p>
+          <div class="card-details" hidden>
+            <p>ASUS dikenal dengan inovasi di bidang laptop, PC, dan perangkat gaming, serta aktif membangun komunitas profesional di seluruh dunia.</p>
+          </div>
+        </article>
+        <article class="card" data-tags="company" tabindex="0">
+          <h3 class="card-title">Microsoft</h3>
+          <p class="card-summary">Perusahaan teknologi multinasional yang berfokus pada perangkat lunak, layanan cloud, dan inovasi digital.</p>
+          <p class="card-meta"><strong>LinkedOn:</strong> <a href="https://www.linkedin.com/company/microsoft/" target="_blank" rel="noopener">Microsoft</a></p>
+          <div class="card-details" hidden>
+            <p>Microsoft merupakan salah satu perusahaan terbesar di dunia, menyediakan solusi teknologi untuk individu, bisnis, dan organisasi global.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Message Us -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Message Us</h2>
+      <p class="lead">Kirim pesan kepada kami untuk melaporkan masalah dan juga jika ingin mengetahui informasi lebih lanjut tentang layanan LinkedOn</p>
+      
+      <div class="contact-grid">
+        <form id="contactForm" novalidate>
+          <div class="row">
+            <label for="name">Nama</label>
+            <input id="name" name="name" type="text" placeholder="Nama" required/>
+            <div class="field-error" id="err-name" aria-live="polite"></div>
+          </div>
+          <div class="row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="email@domain.com" required/>
+            <div class="field-error" id="err-email" aria-live="polite"></div>
+          </div>
+          <div class="row">
+            <label for="phone">No. HP</label>
+            <input id="phone" name="phone" type="tel" placeholder="08xxxxxxxxxx" required/>
+            <div class="field-error" id="err-phone" aria-live="polite"></div>
+          </div>
+          <div class="row">
+            <label for="dob">Tanggal Lahir</label>
+            <input id="dob" name="dob" type="date" required/>
+            <div class="field-error" id="err-dob" aria-live="polite"></div>
+          </div>
+          <div class="row">
+            <label>Jenis Kelamin</label>
+            <fieldset class="gender">
+              <legend class="sr-only">Pilih jenis kelamin</legend>
+              <div class="inline">
+                <label><input type="radio" name="gender" value="Laki-Laki" required/> Laki-Laki</label>
+                <label><input type="radio" name="gender" value="Perempuan"/> Perempuan</label>
+              </div>
+            </fieldset>
+            <div class="field-error" id="err-gender" aria-live="polite"></div>
+          </div>
+          <div class="row">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="4" placeholder="Pesan" required></textarea>
+            <div class="field-error" id="err-message" aria-live="polite"></div>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+
+        <aside class="output" aria-live="polite">
+          <p class="muted" id="timeNow">Current time : -</p>
+          <div id="result">
+            <p><strong>Nama :</strong> -</p>
+            <p><strong>Email :</strong> -</p>
+            <p><strong>No. HP :</strong> -</p>
+            <p><strong>Tanggal Lahir :</strong> -</p>
+            <p><strong>Jenis Kelamin :</strong> -</p>
+            <p><strong>Pesan :</strong> -</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>LinkedOn --- Created by Sandy Julius Elias</p>
+    </div>
+  </footer>
+
+  <!-- Quick signup modal -->
+  <div id="modalBackdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal" role="document">
+      <button class="close" id="modalClose" aria-label="Close">✕</button>
+      <h3>Daftar Cepat</h3>
+      <p>Isi data singkat untuk kami hubungi kembali.</p>
+      <form id="quickForm">
+        <div><label for="qname">Nama</label><input id="qname" name="qname" required/></div>
+        <div><label for="qemail">Email</label><input id="qemail" name="qemail" type="email" required/></div>
+        <div style="margin-top:10px"><button type="submit" class="btn primary">Kirim</button></div>
+      </form>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
