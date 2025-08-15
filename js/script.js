@@ -190,7 +190,7 @@ form?.addEventListener('submit', (e) => {
 });
 
 // Enhanced active nav link highlighting with smooth transitions
-const sections = ['home','profile','network','contact'].map(id => document.getElementById(id));
+const sections = ['home','profile','network','portofolio','contact'].map(id => document.getElementById(id));
 const links = Array.from(document.querySelectorAll('.nav a'));
 
 function setActiveNav() {
